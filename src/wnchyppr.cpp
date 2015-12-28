@@ -24,7 +24,7 @@
 * GNU General Public License http://www.gnu.org/licenses/gpl.html
 *****************************************************************************/
 
-#include <string.h>                    // memmove function
+#include <string.h>                    // memcpy function
 #include "stocc.h"                     // class definition
 #include "erfres.h"                    // table of error function residues (Don't precompile this header)
 

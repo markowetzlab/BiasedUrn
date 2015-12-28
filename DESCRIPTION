@@ -1,8 +1,8 @@
 Package: BiasedUrn
 Type: Package
-Title: Biased Urn model distributions
-Version: 1.06.1
-Date: 2013-11-09
+Title: Biased Urn Model Distributions
+Version: 1.07
+Date: 2015-12-28
 Author: Agner Fog
 Maintainer: Agner Fog <agner@agner.org>
 Description: Statistical models of biased sampling in the form of 
@@ -13,7 +13,7 @@ Description: Statistical models of biased sampling in the form of
   See vignette("UrnTheory") for explanation of these distributions.
 License: GPL-3
 URL: http://www.agner.org/random/ http://www.r-project.org
-Packaged: 2013-12-29 08:38:57 UTC; ripley
+Packaged: 2015-12-28 07:10:49 UTC; A
 NeedsCompilation: yes
 Repository: CRAN
-Date/Publication: 2013-12-29 09:43:58
+Date/Publication: 2015-12-28 09:01:09

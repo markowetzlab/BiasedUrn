@@ -1,7 +1,7 @@
 /*************************** fnchyppr.cpp **********************************
 * Author:        Agner Fog
 * Date created:  2002-10-20
-* Last modified: 2011-08-05
+* Last modified: 2015-12-27
 * Project:       stocc.zip
 * Source URL:    www.agner.org/random
 *
@@ -17,11 +17,11 @@
 * The file stocc.h contains class definitions.
 * Further documentation on www.agner.org/random
 *
-* Copyright 2002-2011 by Agner Fog. 
+* Copyright 2002-2015 by Agner Fog. 
 * GNU General Public License http://www.gnu.org/licenses/gpl.html
 *****************************************************************************/
 
-#include <string.h>                    // memcpy function
+#include <string.h>                    // memmove function
 #include "stocc.h"                     // class definition
 
 
@@ -329,7 +329,7 @@ double CFishersNCHypergeometric::MakeTable(double * table, int32 MaxLength, int3
    }
    if (i1 > 0) {
       // move table down for cut-off left tail
-      memcpy(table, table+i1, (i0-i1+1)*sizeof(*table));
+      memmove(table, table+i1, (i0-i1+1)*sizeof(*table));
       // adjust indices
       i0 -= i1;  i2 -= i1;  i1 = 0;
    }
