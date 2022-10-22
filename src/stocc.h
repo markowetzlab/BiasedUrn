@@ -1,7 +1,7 @@
 /*****************************   stocc.h   **********************************
 * Author:        Agner Fog
 * Date created:  2004-01-08
-* Last modified: 2011-08-05
+* Last modified: 2022-10-18
 * Project:       randomc.h
 * Source URL:    www.agner.org/random
 *
@@ -189,7 +189,7 @@
 * noncentral hypergeometric distributions and theoretical explanations of 
 * the methods for calculating and sampling from these.
 *
-* © 2002-2011 Agner Fog. GNU General Public License www.gnu.org/copyleft/gpl.html
+* (c) 2002-2022 Agner Fog. GNU General Public License v.3 www.gnu.org/copyleft/gpl.html
 *******************************************************************************/
 
 #ifndef STOCC_H

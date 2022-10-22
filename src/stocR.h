@@ -1,4 +1,9 @@
-/**************************** STOCR.H ************************ 2006-10-21 AF *
+/**************************** STOCR.H ***************************************
+* Author:        Agner Fog
+* Date created:  2006-10-21
+* Last modified: 2022-10-18
+* Project:       randomc.h
+* Source URL:    www.agner.org/random
 *
 * This file defines additions to the C++ library of non-uniform random number
 * generators for the R-language interface.
@@ -51,7 +56,7 @@
 * noncentral hypergeometric distributions and theoretical explanations of 
 * the methods for calculating and sampling from these.
 *
-* © 2006 Agner Fog. GNU General Public License www.gnu.org/copyleft/gpl.html
+* (c) 2006-2022 Agner Fog. GNU General Public License v. 3. www.gnu.org/copyleft/gpl.html
 *******************************************************************************/
 
 #ifndef STOC_R_H

@@ -1,7 +1,7 @@
 /*****************************   randomc.h   **********************************
 * Author:        Agner Fog
 * Date created:  1997
-* Last modified: 2011-08-05
+* Last modified: 2022-10-18
 * Project:       randomc.h
 * Source URL:    www.agner.org/random
 *
@@ -80,8 +80,8 @@
 * The file randomc.htm contains further documentation on these random number
 * generators.
 *
-* © 1997 - 2011 Agner Fog. 
-* GNU General Public License www.gnu.org/copyleft/gpl.html
+* (c) 1997 - 2022 Agner Fog. 
+* GNU General Public License v. 3. www.gnu.org/copyleft/gpl.html
 *******************************************************************************/
 
 #ifndef RANDOMC_H

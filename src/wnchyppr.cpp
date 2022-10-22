@@ -1,7 +1,7 @@
 /*************************** wnchyppr.cpp **********************************
 * Author:        Agner Fog
 * Date created:  2002-10-20
-* Last modified: 2013-11-06
+* Last modified: 2022-10-18
 * Project:       stocc.zip
 * Source URL:    www.agner.org/random
 *
@@ -20,8 +20,8 @@
 * The file ran-instructions.pdf contains further documentation and 
 * instructions.
 *
-* Copyright 2002-2013 by Agner Fog. 
-* GNU General Public License http://www.gnu.org/licenses/gpl.html
+* Copyright 2002-2022 by Agner Fog. 
+* GNU General Public License v3. 3. http://www.gnu.org/licenses/gpl.html
 *****************************************************************************/
 
 #include <string.h>                    // memcpy function
@@ -633,8 +633,8 @@ int CWalleniusNCHypergeometric::BernouilliH(int32 x_, double h, double rh, Stoch
    // This function is intended for use in rejection methods for sampling from
    // the Wallenius distribution. It is called from 
    // StochasticLib3::WalleniusNCHypRatioOfUnifoms in the file stoc3.cpp
-   double f0;                      // Lambda*Phi(½)
-   double phideri0;                // phi(½)/rd
+   double f0;                      // Lambda*Phi(0.5)
+   double phideri0;                // phi(0.5)/rd
    double qi;                      // 2^(-r*omega[i])
    double qi1;                     // 1-qi
    double omegai[2] = {omega,1.};  // weights for each color
@@ -665,7 +665,7 @@ int CWalleniusNCHypergeometric::BernouilliH(int32 x_, double h, double rh, Stoch
    k *= w;                         // w * k   
    rdm1 = rd - 1.;
 
-   // calculate phi(½)/rd
+   // calculate phi(0.5)/rd
    phideri0 = -LN2 * rdm1;
    for (i=0; i<2; i++) {
       romegi = r * omegai[i];

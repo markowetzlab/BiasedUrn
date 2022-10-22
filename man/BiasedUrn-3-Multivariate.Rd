@@ -181,7 +181,11 @@ dMWNCHypergeo(c(8,10,6), c(20,30,20), 24, c(1.,2.5,1.8))
 }
 
 \references{
-\url{http://www.agner.org/random/}
+\url{https://www.agner.org/random/}
+
+Fog, A. 2008a. Calculation methods for Wallenius’ noncentral hypergeometric distribution.  \emph{Communications in Statistics—Simulation and Computation} \bold{37}, 2 \doi{10.1080/03610910701790269}
+
+Fog, A. 2008b. Sampling methods for Wallenius’ and Fisher’s noncentral hypergeometric distributions.  \emph{Communications in Statistics—Simulation and Computation} \bold{37}, 2 \doi{10.1080/03610910701790236}
 }
 
 \keyword{ distribution }

@@ -1,15 +1,15 @@
 /*************************** urn1.cpp **********************************
 * Author:        Agner Fog
 * Date created:  2006
-* Last modified: 2011-08-05
+* Last modified: 2022-10-18
 * Project:       BiasedUrn
 * Source URL:    www.agner.org/random
 *
 * Description:
 * R interface to univariate noncentral hypergeometric distributions
 *
-* Copyright 2006-2011 by Agner Fog. 
-* GNU General Public License http://www.gnu.org/licenses/gpl.html
+* Copyright 2006-2022 by Agner Fog. 
+* GNU General Public License v. 3. http://www.gnu.org/licenses/gpl.html
 *****************************************************************************/
 
 #include <R.h>
@@ -299,8 +299,10 @@ SEXP rlower_tail // TRUE: P(X <= x), FALSE: P(X > x)
 
    // Check for consistency
    if (xmean < x1 || xmean > x2) {
-      error("Inconsistency. mean = %i, lower limit = %i, upper limit = %i",
-      xmean, x1, x2);
+      //!! error("Inconsistency. mean = %i, lower limit = %i, upper limit = %i", xmean, x1, x2);
+      // Error message removed 2022-10-18
+      if (xmean < x1) xmean = x1;
+      if (xmean > x2) xmean = x2;
    }
 
    // Make left tail of table cumulative:
@@ -422,8 +424,11 @@ SEXP rlower_tail // TRUE: P(X <= x), FALSE: P(X > x)
 
    // Check for consistency
    if (xmean < x1 || xmean > x2) {
-      error("Inconsistency. mean = %i, lower limit = %i, upper limit = %i",
-      xmean, x1, x2);
+      // !! error("Inconsistency. mean = %i, lower limit = %i, upper limit = %i", xmean, x1, x2);
+      // Error message removed 2022-10-18 because two users have complained.
+      // Example: pWNCHypergeo(x = 643, m1 = 643, m2 = 17000, n = 17610, odds=1)
+      if (xmean < x1) xmean = x1;
+      if (xmean > x2) xmean = x2;
    }
 
    // Make left tail of table cumulative:

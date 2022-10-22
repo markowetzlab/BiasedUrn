@@ -34,9 +34,9 @@ to decide which distribution to use in a specific case.
 \tabular{ll}{
 Package: \tab BiasedUrn\cr
 Type: \tab Package\cr
-Version: \tab 1.06\cr
-Date: \tab 2013-11-06\cr
-License: \tab GPL\cr
+Version: \tab 2.0.8\cr
+Date: \tab 2022-10-21\cr
+License: \tab GPL-3\cr
 }
 
 \bold{Univariate functions in this package}
@@ -80,7 +80,11 @@ Maintainer: Agner Fog <agner@agner.org>
 }
 
 \references{
-\url{http://www.agner.org/random/}
+\url{https://www.agner.org/random/}
+
+Fog, A. 2008a. Calculation methods for Wallenius’ noncentral hypergeometric distribution.  \emph{Communications in Statistics—Simulation and Computation} \bold{37}, 2 \doi{10.1080/03610910701790269}
+
+Fog, A. 2008b. Sampling methods for Wallenius’ and Fisher’s noncentral hypergeometric distributions.  \emph{Communications in Statistics—Simulation and Computation} \bold{37}, 2 \doi{10.1080/03610910701790236}
 }
 
 \keyword{ package }
@@ -89,11 +93,19 @@ Maintainer: Agner Fog <agner@agner.org>
 \keyword{ multivariate }
 
 \seealso{
-\code{vignette("UrnTheory")}
-\cr
 \code{\link{BiasedUrn-Univariate}}.
 \cr
 \code{\link{BiasedUrn-Multivariate}}.
+\cr
+\code{vignette("UrnTheory")}
+\cr
+\code{demo(CompareHypergeo)}
+\cr
+\code{demo(ApproxHypergeo)}
+\cr
+\code{demo(OddsPrecision)}
+\cr
+\code{demo(SampleWallenius)}
 \cr
 \code{\link{dhyper}}
 \cr
@@ -103,3 +115,4 @@ Maintainer: Agner Fog <agner@agner.org>
 \examples{
 dWNCHypergeo(12, 25, 32, 20, 2.5)
 }
+
